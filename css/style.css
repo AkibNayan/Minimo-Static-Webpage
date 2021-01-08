@@ -1,6 +1,3 @@
-/************************
-global css file
-************************/
 *{
 	margin: 0;
 	padding: 0;
@@ -12,73 +9,68 @@ a{
 	width: 1140px;
 	margin: auto;
 }
-/************************
-header section css file
-************************/
+/***************************
+header section css
+***************************/
 header{
 	width: 100%;
-	padding: 50px 0px;
-	display: flow-root;
 }
 .nav-bar{
 	width: 100%;
 	float: left;
+	display: flow-root;
+	padding-top: 40px;
 }
-.logo{
-	width: 25%;
+.nav-bar .logo{
+	width: 30%;
 	float: left;
+	color: #000000;
 }
-.menu{
-	width: 75%;
+.nav-bar .menu{
+	width: 70%;
 	float: right;
-	text-align: right;
+	text-align: center;
 }
-.menu ul li{
-	list-style: none;
+.nav-bar .menu ul li{
+	list-style-type: none;
 	display: inline-block;
-	margin-left: 60px;
+	margin-left: 85px;
 }
-.menu ul li a{
+.nav-bar .menu ul li a{
 	font-family: 'Playfair Display', serif;
-    color: #9c9696;
-	text-transform: uppercase;
+	color: #626262;
 	font-weight: 400;
 }
-.menu ul li a:hover{
-	color: black;
-}
-/************************
-main-post section css file
-************************/
+/*****************************
+main post section css file
+*****************************/
 .main-post{
 	width: 100%;
 	display: flow-root;
 }
 .details{
-	padding: 70px;
+    padding: 107px;
 }
 .details h4{
-	font-family: 'Ubuntu',sans-serif;
-	color: #9c9696;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	color: #bdb7aa;
+	margin: 30px 0px;
 }
 .details h1{
-	padding: 20px 0px;
-	color: #9c9696;
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	color: #9c9c9c;
+	margin-bottom: 30px;
 }
 .details p{
-	font-family: 'Playfair Display',serif;
-	color: #d5d5d55;
+	font-family: 'Playfair Display', serif;
 	font-weight: 400;
-	margin-bottom: 20px;
+	color: #a1a1a1;
 }
-.details span{
-	font-family: 'Playfair Display',serif;
-	color: #9c9696;
-	font-weight: 400;
-}
-/************************
+/**************************
 all post section css file
-************************/
+*****************************/
 .posts{
 	width: 100%;
 	display: flow-root;
@@ -86,92 +78,106 @@ all post section css file
 .gallery{
 	width: 100%;
 	float: left;
-	padding: 63px;
+	padding-bottom: 50px;
 }
-.left{
-	width: 42%;
-	float: left;
-	padding-right: 37px
+.gallery .left{
+	width: 40%;
+    float: left;
+    padding-left: 106px;
 }
-.right{
-	width: 42%;
-	float: left;
 }
-/*************************
-newsletter section css start
-***************************/
+.gallery .right{
+	width: 50%;
+	float: right;
+}
 .newsletter{
 	width: 100%;
-	background-color: #f0f0f0;
-	display: flow-root;
-	padding: 60px 0px;
-}
-.subscribe{
 	text-align: center;
+	background-color: #f0f0f0;
 }
-.subscribe h1{
-	font-family: 'Playfair Display', serif;
-	color: #797979;
+.newsletter .subscribe{
+	padding: 80px 0px;
+}
+.newsletter .subscribe h1{
+	font-family: 'Playfair Display', sans-serif;
 	font-weight: 400;
-	margin: 30px 0px;
+	color: #919191;
+	padding: 30px 0px;
 }
-.subscribe input{
-	width: 37%;
-    padding: 15px 0px;
+.newsletter .subscribe form input{
+	font-family: 'Playfair Display', sans-serif;
+	font-weight: 400;
+	color: #9b9b9b;
+	padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 260px;
     border: none;
     border-bottom: 2px solid black;
     background: transparent;
 }
-/*placeholder effect*/
-.subscribe input::placeholder{
-	font-family: 'Playfair Display', serif;
-	font-weight: 400;
-	color: #a4a4a4;
-}
-/*After click effect using focus*/
-.subscribe input:focus{
-	outline: none;
+.newsletter .subscribe input:focus{
 	border-bottom-color: tomato;
+	outline: none;
 }
-.btn{
-	text-align: center;
-    margin: 70px;
-}
-.btn input{
-	padding: 13px;
-	color: #a4a4a4;
-    border-color: #a4a4a4;
-    margin-top: 30px;
-    margin-bottom: 220px;
-}
-/***********************
-footer part css file
+/******************
+button section css file
 ***********************/
+.btn{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.btn form input{
+	font-family: 'Playfair Display', sans-serif;
+	font-weight: 400;
+	color: #626262;
+	padding: 15px 30px;
+}
+/*footer part css file*/
 .footer{
 	width: 100%;
 	display: flow-root;
-	padding-bottom: 80px;
-	background-color: #f0f0f0;
-	padding-top: 30px;
-	padding-left: 54px;
+	background: #f0f0f0;
+	padding: 40px 0px;
 }
-.footer .left{
-	width: 50%;
+.footer .footer-menu{
+	width: 100%;
 	float: left;
 }
-.footer .right{
-	width: 34%;
+.footer .footer-menu .left{
+	width: 30%;
+	float: left;
+	text-align: center;
+	padding-top: 15px;
+}
+.footer .footer-menu .right{
+	width: 70%;
 	float: right;
+	text-align: center;
 }
-.footer .left li{
-    list-style-type: none;
-    display: inline-block;
-    padding-right: 24px;
-    font-size: 25px;
-}
-.footer .right ul li{
+.footer .footer-menu ul li{
 	list-style-type: none;
 	display: inline-block;
-    padding-right: 24px;
-    font-size: 25px;
+}
+.footer .footer-menu .left li{
+	padding-left: 20px;
+}
+.footer .footer-menu .right li{
+	padding-right: 30px;
+}
+.footer-menu .right li a i{
+	background-color: gray;
+	color: white;
+	transform: scale(1.4);
+	padding: 10px;
+	border: 2px solid black;
+	border-radius: 100%;
+	transition: 0.5s ease-in-out;
+}
+.footer-menu .right li a i:hover{
+	color: tomato;
+	padding: 20px;
+	transition: 0.5s ease-in-out;
+	transform: rotate(180deg);
 }
