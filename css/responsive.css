@@ -1,0 +1,57 @@
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  .nav-bar .menu ul li a{
+    font-size: 23px !important;
+  }
+  .details h4{
+    font-size: 25px !important;
+  }
+  .details h1{
+    font-size: 45px !important;
+  }
+  .details p {
+    font-size: 30px !important;
+  }
+  .newsletter .subscribe h1{
+    font-size: 45px !important;
+  }
+  .newsletter .subscribe form input{
+    width: 50% !important;
+  }
+  .newsletter .subscribe form input::placeholder{
+    font-size: 30px !important;
+  }
+  .btn form input{
+    padding: 21px 82px !important;
+  }
+  .btn form input::placeholder{
+    font-size: 30px !important;
+  }
+  .footer .left ul li a{
+    font-size: 25px !important;
+  }
+  .footer .right ul li a{
+    font-size: 25px !important;
+  }
+}
+
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  /* CSS */
+  
+}
